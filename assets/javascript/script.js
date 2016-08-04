@@ -12,6 +12,7 @@ function searchArticles(){
     var nyresults = response.response.docs[0];
     console.log(nyresults.headline.main);
 
+   console.log(nyresults.pub_date);
   });
 }
 
