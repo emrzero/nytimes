@@ -1,0 +1,23 @@
+.jumbotron{
+height:125px;
+text-align: center;
+margin-top: 0px;
+margin-right: 100px;
+margin-left: 100px;
+
+}
+
+.jumbotron h1  {
+font-size: 50px;
+line-height: 5px;
+
+}
+
+form   {
+
+margin-right: 100px;
+margin-left: 100px;
+
+
+
+}
