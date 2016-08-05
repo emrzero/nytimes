@@ -10,8 +10,8 @@ var nyresults;
 
 function searchArticles(){
   $.ajax({url: queryURL, method: 'GET' }).done(function(response){
-    nyresults = response.response.docs[0];
-    console.log(nyresults.headline.main);
+    nyresults = response.response.docs;
+    // console.log(nyresults.headline.main);
 
   });
 }
@@ -32,7 +32,11 @@ function retrieveValues(){
 
 }
 
-
+function printResults() {
+  for (var i = 0; i < 5; i++){
+    console.log(nyresults[i].headline.main);
+  }
+}
 
 $(document).ready(function(){
     console.log("hello");
