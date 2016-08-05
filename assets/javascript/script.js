@@ -16,9 +16,9 @@ function searchArticles(){
   });
 }
 
-function resetFields(){
+// function resetFields(){
 
-}
+// }
 
 
 function retrieveValues(){
@@ -32,11 +32,22 @@ function retrieveValues(){
 
 }
 
-$('#search').on('click', function(){
-    retrieveValues();
-    searchArticles();
-  });
+
 
 $(document).ready(function(){
-  
+    console.log("hello");
+
+    $('#s').click(function(){
+      retrieveValues();
+      searchArticles();
+
+      return false;
+    });
+
+    $('#c').on('click', function(){
+      $('#')
+      return false;
 });
+
+});
+
