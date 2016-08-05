@@ -23,30 +23,34 @@
 
 <form>
   <div class="form-group" id="search">
-    <label for="exampleInputEmail1">Search Term</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Search">
+    <label >Search Term</label>
+    <input type="text" class="form-control" id="searchTerm" placeholder="Search">
   </div>
-  <div class="form-group" id="number">
+  <div class="form-group">
     <label for="exampleInputPassword1">Number of Records To Review</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="5">
+    <select class="form-control" id="num">
+      <option value=5>5</option>
+      <option value=10>10</option>
+      <option value=15>15</option>
+    </select>
   </div>
   <div class="form-group" id="start">
-    <label for="exampleInputEmail1">Start Year</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Start Year">
+    <label >Start Year (optional)</label>
+    <input type="text" class="form-control" id="startYear" placeholder="Start Year">
   </div>
   <div class="form-group" id="end">
-    <label for="exampleInputPassword1">End Year</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="End Year">
+    <label for="exampleInputPassword1">End Year (optional)</label>
+    <input type="text" class="form-control" id="endYear" placeholder="End Year">
   </div>
-  <button type="submit" class="btn btn-default">Search</button>
-  <button type="submit" class="btn btn-default">Clear</button>
+  <button class="btn btn-default" id="search">Search</button>
+  <button class="btn btn-default">Clear</button>
 	</div>
 </form>
 <br>
 <form>
 <div class="panel panel-default" id="results">
   <div class="panel-heading">Search Results</div>
-  <div class="panel-body">
+  <div class="panel-body" id="results-text">
   
   </div>
 </div>
