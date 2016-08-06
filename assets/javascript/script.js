@@ -8,6 +8,12 @@ var apiKey = '7243270b1b81449887ca3f4f0b4d35f0';
 var queryURL;
 var nyresults;
 
+function eQ (){
+    retrieveValues();
+    searchArticles();
+    printResults();
+    return false;
+}
 
 function searchArticles(){
   $.ajax({url: queryURL, method: 'GET' }).done(function(response){
@@ -57,14 +63,7 @@ function printResults() {
 
 $(document).ready(function(){
 
-    $('#s').click(function(){
-      return false;
-      retrieveValues();
-      searchArticles();
-      printResults();
-
-      
-    });
+    $('#s').click(eQ);
 
     $('#c').on('click', function(){
       $('#')
