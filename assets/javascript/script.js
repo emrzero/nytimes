@@ -63,7 +63,10 @@ function printResults() {
 
 
 
-    $('#s').click(eQ);
+$(document.body).on('click', '#s', function(){
+  console.log(searchTerm);
+  return false;
+});
 
     $('#c').on('click', function(){
       $('#search').val('');
