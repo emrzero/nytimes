@@ -30,7 +30,7 @@ function retrieveValues(){
   startDate = $('#startYear').val();
   endDate = $('#endYear').val();
 
-  queryURL ='https://api.nytimes.com/svc/search/v2/articlesearch.json?q=' + searchTerm + '&api-key=' + apiKeys;
+  queryURL ='https://api.nytimes.com/svc/search/v2/articlesearch.json?q=' + searchTerm + '&api-key=' + apiKey;
 
 }
 
