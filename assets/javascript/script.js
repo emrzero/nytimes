@@ -66,7 +66,7 @@ function printResults() {
     $('#s').click(eQ);
 
     $('#c').on('click', function(){
-      $('#')
+      $('#search').val('');
         return false;
     });
 
