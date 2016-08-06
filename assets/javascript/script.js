@@ -63,7 +63,7 @@ function printResults() {
 
 
 
-$(document.body).on('click', '#s', function(){
+$('#s').on('click', function(){
   console.log(searchTerm);
   return false;
 });
