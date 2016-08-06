@@ -12,7 +12,6 @@ function eQ (){
     retrieveValues();
     searchArticles();
     printResults();
-    return false;
 }
 
 function searchArticles(){
