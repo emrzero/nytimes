@@ -49,7 +49,7 @@ function printResults() {
     p.html(nyresults[i].pub_date);
     newDiv.append(p);
 
-    $('#results-text').append(newDiv);
+    $('#resultsText').append(newDiv);
   }
 }
 
