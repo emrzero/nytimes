@@ -12,6 +12,7 @@ function eQ (){
     retrieveValues();
     searchArticles();
     printResults();
+    return false;
 }
 
 function searchArticles(){
@@ -50,8 +51,8 @@ function printResults() {
     newDiv.append(h);
 
     var p = $('<p>');
-    p.html(nyresults[i].byline.original);
-    newDiv.append(p);
+    // p.html(nyresults[i].byline.original);
+    // newDiv.append(p);
 
     p.html(nyresults[i].pub_date);
     newDiv.append(p);
@@ -60,14 +61,13 @@ function printResults() {
   }
 }
 
-$(document).ready(function(){
+
 
     $('#s').click(eQ);
 
     $('#c').on('click', function(){
       $('#')
-      return false;
-});
+        return false;
+    });
 
-});
 
