@@ -35,15 +35,30 @@ function retrieveValues(){
 function printResults() {
   for (var i = 0; i < 5; i++){
     console.log(nyresults[i].headline.main);
+
+    var newDiv = $('<div>');
+
+    var h = $('<h1>');
+    h.text(nyresults[i].headline.main);
+    newDiv.append(h);
+
+    var p = $('<p>');
+    p.html(nyresults[i].byline.original);
+    newDiv.append(p);
+
+    p.html(nyresults[i].pub_date);
+    newDiv.append(p);
+
+    $('#results-text').append(newDiv);
   }
 }
 
 $(document).ready(function(){
-    console.log("hello");
 
     $('#s').click(function(){
       retrieveValues();
       searchArticles();
+      printResults();
 
       return false;
     });
