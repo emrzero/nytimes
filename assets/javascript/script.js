@@ -10,8 +10,9 @@ var nyresults;
 
 function searchArticles(){
   $.ajax({url: queryURL, method: 'GET' }).done(function(response){
+    console.log(response);
     nyresults = response.response.docs;
-    // console.log(nyresults.headline.main);
+    console.log(nyresults[0].headline.main);
 
   });
 }
