@@ -3,7 +3,8 @@ var numOfRecords;
 var startDate;
 var endDate;
 
-var apiKey = 'b9f91d369ff59547cd47b931d8cbc56b:0:74623931';
+// var apiKey = 'b9f91d369ff59547cd47b931d8cbc56b:0:74623931';
+var apiKey = '7243270b1b81449887ca3f4f0b4d35f0';
 var queryURL;
 var nyresults;
 
@@ -29,7 +30,7 @@ function retrieveValues(){
   startDate = $('#startYear').val();
   endDate = $('#endYear').val();
 
-  queryURL ='https://api.nytimes.com/svc/search/v2/articlesearch.json?q=' + searchTerm + '&api-key=9d4a8986921972b65754ea0809d47c84%3A12%3A74623931';
+  queryURL ='https://api.nytimes.com/svc/search/v2/articlesearch.json?q=' + searchTerm + '&api-key=' + apiKeys;
 
 }
 
@@ -57,11 +58,12 @@ function printResults() {
 $(document).ready(function(){
 
     $('#s').click(function(){
+      return false;
       retrieveValues();
       searchArticles();
       printResults();
 
-      return false;
+      
     });
 
     $('#c').on('click', function(){
